@@ -33,11 +33,9 @@ The input of the network will be the observation provided by the environment, th
 
 The fitness during the 50 generations is
 
-![Image of Yaktocat](cartpole/fitness_per_generation.svg)
+![Fitness](cartpole/fitness_per_generation.svg)
 
 At the end, the agent learnt how to keep the pole balanced.
 
-<video width="480" height="320" controls="controls">
-  <source src="cartpole/video/openaigym.video.0.5782.video000000.mp4" type="video/mp4">
-</video>
+![Agent](cartpole/video/cartpole.gif)
 
