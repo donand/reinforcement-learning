@@ -10,7 +10,9 @@ The top k% of the individuals are selected to be kept in the next generation. <b
 The selection of the parents is performed by sampling the generation weighting the individuals on their fitness value. So individuals with bigger fitness value are more likely to be selected as a parent for the new offspring.
 
 ## OpenAI Gym CartPole using Genetic Algorithms
-I am using my implementation of genetic algorithms in order to train a neural network that is used as the policy by the agent. 
+I am using my implementation of genetic algorithms in order to train a neural network that is used as the policy by the agent.
+
+The environment that I am going to solve is the [CartPole-v0](https://github.com/openai/gym/wiki/CartPole-v0) by OpenAI. 
 
 One generation is made of several individuals, and each individual is a configuration of the neural network. <br>
 One configuration is represented with a flattened array of all the weights of the network. <br>
