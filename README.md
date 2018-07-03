@@ -37,5 +37,5 @@ The fitness during the 50 generations is
 
 At the end, the agent learnt how to keep the pole balanced.
 
-![Agent](cartpole/video/cartpole.gif)
+<img src="cartpole/video/cartpole.gif">
 
