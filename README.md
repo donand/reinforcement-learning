@@ -37,5 +37,6 @@ The fitness during the 50 generations is
 
 At the end, the agent learnt how to keep the pole balanced.
 
-![Agent](https://media.giphy.com/media/PPUoxd7pjLvfCayb1h/giphy.gif)
-
+<p align="center">
+<img src="https://media.giphy.com/media/3mjTMF04baZzRWwCK8/giphy.gif">
+</p>
