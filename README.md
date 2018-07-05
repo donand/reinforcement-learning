@@ -22,16 +22,23 @@ The fitness value of one configuration is computed by running one episode of the
 The generation of a child is performed by a single point crossover, with the point chosen randomly inside the array of the weights. After this, I add to each weight a random sample taken from a normal distribution with a probability given by the mutation probability.
 
 The parameters of the genetic algorithms are the following:
-- Size of a generation: 40
-- Number of generations: 50
-- Max number of steps for the environment: 1000
-- Mutation probability: 0.05
+
+Parameter | Value 
+--- | --- 
+Generation Size | 40
+Number of Generations | 50
+Max number of steps for the environment | 1000
+Mutation Probability | 0.05
+
 
 The structure of the network is the following:
-- Input layer size: 4
-- First hidden layer: 10 neurons with ReLU activation function
-- Second hidden layer: 7 neurons with ReLU activation funtion
-- Output layer: 1 neuron with sigmoid activation function
+
+Layer | Size | Activation
+--- | --- | ---
+Input  | 4 | 
+First hidden | 10 | ReLU
+Second hidden | 7 | ReLU
+Output | 1 | Sigmoid
 
 The input of the network will be the observation provided by the environment, that is composed by 4 real values. The output will be a discrete binary action {Left, Right}.
 
@@ -55,16 +62,24 @@ The crossover and mutation operators are the same.
 The differences are in the network structure and in the parameters of the genetic algorithm.
 
 The parameters of the genetic algorithms are the following:
-- Size of a generation: 50
-- Number of generations: 100
-- Max number of steps for the environment: 1000
-- Mutation probability: 0.1
+
+Parameter | Value 
+--- | --- 
+Generation Size | 50
+Number of Generations | 100
+Max number of steps for the environment | 1000
+Mutation Probability | 0.1
 
 The structure of the network is the following:
-- Input layer size: 2
-- First hidden layer: 10 neurons with ReLU activation function
-- Second hidden layer: 7 neurons with ReLU activation funtion
-- Output layer: 3 neurons with softmax activation function, one for each discrete action
+
+Layer | Size | Activation
+--- | --- | ---
+Input  | 2 | 
+First hidden | 10 | ReLU
+Second hidden | 7 | ReLU
+Output | 3 | Softmax
+
+The output layer has one neuron for each action.
 
 The input to the network is the observation provided by the environment, that are the position and the speed of the car. The output of the network will be one discrete action in {Left, Nothing, Right}.
 
