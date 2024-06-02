@@ -23,22 +23,22 @@ The generation of a child is performed by a single point crossover, with the poi
 
 The parameters of the genetic algorithms are the following:
 
-Parameter | Value 
---- | --- 
-Generation Size | 40
-Number of Generations | 50
-Max number of steps for the environment | 1000
-Mutation Probability | 0.05
+| Parameter                               | Value |
+| --------------------------------------- | ----- |
+| Generation Size                         | 40    |
+| Number of Generations                   | 50    |
+| Max number of steps for the environment | 1000  |
+| Mutation Probability                    | 0.05  |
 
 
 The structure of the network is the following:
 
-Layer | Size | Activation
---- | --- | ---
-Input  | 4 | 
-First hidden | 10 | ReLU
-Second hidden | 7 | ReLU
-Output | 1 | Sigmoid
+| Layer         | Size | Activation |
+| ------------- | ---- | ---------- |
+| Input         | 4    |
+| First hidden  | 10   | ReLU       |
+| Second hidden | 7    | ReLU       |
+| Output        | 1    | Sigmoid    |
 
 The input of the network will be the observation provided by the environment, that is composed by 4 real values. The output will be a discrete binary action {Left, Right}.
 
@@ -49,7 +49,7 @@ The fitness during the 50 generations is
 At the end, the agent learnt how to keep the pole balanced.
 
 <p align="center">
-<img src="https://media.giphy.com/media/3mjTMF04baZzRWwCK8/giphy.gif">
+<img src="cartpole_ga/video/cartpole.gif">
 </p>
 
 
@@ -63,21 +63,21 @@ The differences are in the network structure and in the parameters of the geneti
 
 The parameters of the genetic algorithms are the following:
 
-Parameter | Value 
---- | --- 
-Generation Size | 50
-Number of Generations | 100
-Max number of steps for the environment | 1000
-Mutation Probability | 0.1
+| Parameter                               | Value |
+| --------------------------------------- | ----- |
+| Generation Size                         | 50    |
+| Number of Generations                   | 100   |
+| Max number of steps for the environment | 1000  |
+| Mutation Probability                    | 0.1   |
 
 The structure of the network is the following:
 
-Layer | Size | Activation
---- | --- | ---
-Input  | 2 | 
-First hidden | 10 | ReLU
-Second hidden | 7 | ReLU
-Output | 3 | Softmax
+| Layer         | Size | Activation |
+| ------------- | ---- | ---------- |
+| Input         | 2    |
+| First hidden  | 10   | ReLU       |
+| Second hidden | 7    | ReLU       |
+| Output        | 3    | Softmax    |
 
 The output layer has one neuron for each action.
 
@@ -85,19 +85,18 @@ The input to the network is the observation provided by the environment, that ar
 
 The fitness values for different generations are the following
 
-Generation               |  Plot             |  Boxplot
-:-------------------------:|:-------------------------:|:-------------------------:
-Generation 20  |  ![](mountaincar_ga/2018-07-05_11-24/checkpoints/generation_20/generation_20.svg) |  ![](mountaincar_ga/2018-07-05_11-24/checkpoints/generation_20/generation_20_boxplot.svg)
-Generation 40  |  ![](mountaincar_ga/2018-07-05_11-24/checkpoints/generation_40/generation_40.svg) |  ![](mountaincar_ga/2018-07-05_11-24/checkpoints/generation_40/generation_40_boxplot.svg)
-Generation 60  |  ![](mountaincar_ga/2018-07-05_11-24/checkpoints/generation_60/generation_60.svg) |  ![](mountaincar_ga/2018-07-05_11-24/checkpoints/generation_60/generation_60_boxplot.svg)
-Generation 80  |  ![](mountaincar_ga/2018-07-05_11-24/checkpoints/generation_80/generation_80.svg) |  ![](mountaincar_ga/2018-07-05_11-24/checkpoints/generation_80/generation_80_boxplot.svg)
-Generation 100  |  ![](mountaincar_ga/2018-07-05_11-24/fitness_per_generation.svg) |  ![](mountaincar_ga/2018-07-05_11-24/fitness_per_generation_boxplot.svg)
+|   Generation   |                                       Plot                                       |                                         Boxplot                                          |
+| :------------: | :------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------: |
+| Generation 20  | ![](mountaincar_ga/2018-07-05_11-24/checkpoints/generation_20/generation_20.svg) | ![](mountaincar_ga/2018-07-05_11-24/checkpoints/generation_20/generation_20_boxplot.svg) |
+| Generation 40  | ![](mountaincar_ga/2018-07-05_11-24/checkpoints/generation_40/generation_40.svg) | ![](mountaincar_ga/2018-07-05_11-24/checkpoints/generation_40/generation_40_boxplot.svg) |
+| Generation 60  | ![](mountaincar_ga/2018-07-05_11-24/checkpoints/generation_60/generation_60.svg) | ![](mountaincar_ga/2018-07-05_11-24/checkpoints/generation_60/generation_60_boxplot.svg) |
+| Generation 80  | ![](mountaincar_ga/2018-07-05_11-24/checkpoints/generation_80/generation_80.svg) | ![](mountaincar_ga/2018-07-05_11-24/checkpoints/generation_80/generation_80_boxplot.svg) |
+| Generation 100 |         ![](mountaincar_ga/2018-07-05_11-24/fitness_per_generation.svg)          |         ![](mountaincar_ga/2018-07-05_11-24/fitness_per_generation_boxplot.svg)          |
 
 The resulting agents in different generations are the following:
 
- |     |     |
- | :---: | :---: |
-<img src="https://media.giphy.com/media/3bb2y6HtMvGLWqsNMx/giphy.gif"> <br> Generation 1 | <img src="https://media.giphy.com/media/2YozJ6bVOkIaeEYZwP/giphy.gif"> <br> Generation 20 
-<img src="https://media.giphy.com/media/1qfepCQhoct08oP6lM/giphy.gif"> <br> Generation 40  | <img src="https://media.giphy.com/media/claE43YJYmSW65hPkg/giphy.gif">  <br> Generation 60 
-<img src="https://media.giphy.com/media/dCB33uxdq5O9l6M3Iw/giphy.gif"> <br> Generation 80  | <img src="https://media.giphy.com/media/8JNBtsnx7fK2w4Vrbp/giphy.gif"> <br> Generation 100 
-
+ |                                                                                                                                 |                                                                                                                                  |
+ | :-----------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------: |
+ |  <img src="mountaincar_ga/2018-07-05_11-24/checkpoints/generation_0/openaigym.video.0.8543.video000000.gif"> <br> Generation 1  | <img src="mountaincar_ga/2018-07-05_11-24/checkpoints/generation_20/openaigym.video.2.8543.video000000.gif"> <br> Generation 20  |
+ | <img src="mountaincar_ga/2018-07-05_11-24/checkpoints/generation_40/openaigym.video.4.8543.video000000.gif"> <br> Generation 40 | <img src="mountaincar_ga/2018-07-05_11-24/checkpoints/generation_60/openaigym.video.6.8543.video000000.gif">  <br> Generation 60 |
+ | <img src="mountaincar_ga/2018-07-05_11-24/checkpoints/generation_80/openaigym.video.8.8543.video000000.gif"> <br> Generation 80 |          <img src="mountaincar_ga/2018-07-05_11-24/video/openaigym.video.10.8543.video000000.gif"> <br> Generation 100           |
